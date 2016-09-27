@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/flipcountdown.css" />
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        #main {
+            margin: 0px auto;
+            padding: 0px;
+            width: 900px;
+            position: relative;
+        }
+        pre {
+            background: #F7F7F9;
+            padding: 10px;
+            border: 1px solid #E1E1E8;
+            border-radius: 3px;
+            color: #222222;
+        }
+        #langbox {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        #retroclockbox6 .xdsoft_digit:not(.xdsoft_space) {
+            background-color: #333;
+            border-radius: 6px;
+        }
+        #retroclockbox6 .xdsoft_flipcountdown.xdsoft_size_sm .xdsoft_digit {
+            height: 32px;
+            border: 1px solid #fff;
+        }
+        #retroclockbox6 .xdsoft_flipcountdown.xdsoft_size_sm .xdsoft_digit.xdsoft_space,
+        #retroclockbox6 .xdsoft_flipcountdown.xdsoft_size_sm .xdsoft_digit.xdsoft_separator,
+        #retroclockbox6 .xdsoft_flipcountdown.xdsoft_size_sm .xdsoft_digit.xdsoft_dot {
+            background-position: -7px -961px;
+        }
+    </style>
+    <!--<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/jquery.flipcountdown.js"></script>-->
+
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type="text/javascript" src="js/zepto.flipcountdown.js"></script>
+    <script>
+        $(function() {
+            var dt = new Date();
+            $('#retroclockbox6').flipcountdown({
+                beforeDateTime: '8/01/2020' + ' 00:00:01',
+                size: 'sm'
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <p>- set time</p>
+        <pre>
+            $(function() {
+                var dt = new Date();
+                $('#retroclockbox').flipcountdown({
+                    beforeDateTime: '8/01/2020' + ' 00:00:01',
+                    size: 'sm'
+                });
+            })
+        </pre>
+        <div id="retroclockbox6"></div>
+    </div>
+</body>
+</html>
